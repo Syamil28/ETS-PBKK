@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewFlight));
             this.label2 = new System.Windows.Forms.Label();
             this.Fdate = new System.Windows.Forms.DateTimePicker();
@@ -49,9 +49,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.FlightGDV)).BeginInit();
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             this.Fdate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fdate.Location = new System.Drawing.Point(683, 515);
-            this.Fdate.Margin = new System.Windows.Forms.Padding(2);
+            this.Fdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Fdate.Name = "Fdate";
             this.Fdate.Size = new System.Drawing.Size(180, 20);
             this.Fdate.TabIndex = 30;
@@ -96,21 +96,18 @@
             this.Fdest.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Fdest.FormattingEnabled = true;
             this.Fdest.Items.AddRange(new object[] {
-            "Samarinda",
-            "Balikpapan",
-            "Tarakan",
-            "Surabaya",
-            "Papua",
-            "Zimbabwe",
+            "Turkey",
+            "Perancis",
             "Rusia",
-            "Ukraina",
-            "Jakarta",
-            "Bali",
+            "Amerika",
+            "Indonesia",
             "Singapura",
-            "Cina",
-            "Malaysia"});
+            "Papua Nugini",
+            "Thailand",
+            "China ",
+            "Jepang"});
             this.Fdest.Location = new System.Drawing.Point(986, 507);
-            this.Fdest.Margin = new System.Windows.Forms.Padding(2);
+            this.Fdest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Fdest.Name = "Fdest";
             this.Fdest.Size = new System.Drawing.Size(180, 29);
             this.Fdest.TabIndex = 28;
@@ -120,24 +117,22 @@
             this.Fsrc.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Fsrc.FormattingEnabled = true;
             this.Fsrc.Items.AddRange(new object[] {
-            "Samarinda",
-            "Balikpapan",
-            "Tarakan",
-            "Surabaya",
-            "Papua",
-            "Zimbabwe",
+            "Turkey",
+            "Perancis",
             "Rusia",
-            "Ukraina",
-            "Jakarta",
-            "Bali",
+            "Amerika",
+            "Indonesia",
             "Singapura",
-            "Cina",
-            "Malaysia"});
+            "Papua Nugini",
+            "Thailand",
+            "China ",
+            "Jepang"});
             this.Fsrc.Location = new System.Drawing.Point(986, 462);
-            this.Fsrc.Margin = new System.Windows.Forms.Padding(2);
+            this.Fsrc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Fsrc.Name = "Fsrc";
             this.Fsrc.Size = new System.Drawing.Size(180, 29);
             this.Fsrc.TabIndex = 27;
+            this.Fsrc.SelectedIndexChanged += new System.EventHandler(this.Fsrc_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -190,7 +185,7 @@
             this.SeatNum.Location = new System.Drawing.Point(835, 550);
             this.SeatNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SeatNum.Name = "SeatNum";
-            this.SeatNum.Size = new System.Drawing.Size(179, 32);
+            this.SeatNum.Size = new System.Drawing.Size(179, 34);
             this.SeatNum.TabIndex = 23;
             this.SeatNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -221,40 +216,40 @@
             this.FcodeTb.Location = new System.Drawing.Point(683, 459);
             this.FcodeTb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FcodeTb.Name = "FcodeTb";
-            this.FcodeTb.Size = new System.Drawing.Size(179, 32);
+            this.FcodeTb.Size = new System.Drawing.Size(179, 34);
             this.FcodeTb.TabIndex = 21;
             this.FcodeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FlightGDV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.FlightGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.FlightGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.FlightGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.FlightGDV.BackgroundColor = System.Drawing.Color.White;
             this.FlightGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FlightGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.FlightGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FlightGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FlightGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.FlightGDV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FlightGDV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FlightGDV.DefaultCellStyle = dataGridViewCellStyle6;
             this.FlightGDV.EnableHeadersVisualStyles = false;
             this.FlightGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.FlightGDV.Location = new System.Drawing.Point(560, 595);
-            this.FlightGDV.Margin = new System.Windows.Forms.Padding(2);
+            this.FlightGDV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FlightGDV.Name = "FlightGDV";
             this.FlightGDV.ReadOnly = true;
             this.FlightGDV.RowHeadersVisible = false;
@@ -295,7 +290,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(1242, 979);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 40);
             this.button2.TabIndex = 33;
@@ -311,7 +306,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1495, 979);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 40);
             this.button1.TabIndex = 32;
@@ -327,7 +322,7 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1067, 979);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(156, 40);
             this.button3.TabIndex = 34;
@@ -343,7 +338,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(11, 961);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(156, 40);
             this.button4.TabIndex = 35;
@@ -359,21 +354,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1689, 66);
+            this.panel1.Size = new System.Drawing.Size(1265, 66);
             this.panel1.TabIndex = 60;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(1290, 459);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(25, 28);
-            this.label8.TabIndex = 58;
-            this.label8.Text = "x";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label13
             // 
@@ -399,22 +381,36 @@
             this.label12.TabIndex = 76;
             this.label12.Text = "AirITS";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(1290, 459);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(25, 28);
+            this.label8.TabIndex = 58;
+            this.label8.Text = "x";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(11, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1640, 238);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 61;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ViewFlight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1689, 1061);
+            this.ClientSize = new System.Drawing.Size(1265, 824);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
@@ -436,7 +432,7 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewFlight";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewFlight";

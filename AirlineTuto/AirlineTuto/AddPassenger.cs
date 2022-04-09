@@ -90,5 +90,10 @@ namespace AirlineTuto
         {
 
         }
+
+        private void NationalityCb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

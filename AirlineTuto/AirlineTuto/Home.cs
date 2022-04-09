@@ -54,5 +54,10 @@ namespace AirlineTuto
         {
 
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
